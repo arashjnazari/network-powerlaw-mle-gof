@@ -68,6 +68,7 @@ network-powerlaw-mle-gof/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── LICENSE
 ├── run_all.py
 ├── main.py
 ├── check_methods.py
@@ -128,7 +129,7 @@ All four likelihoods are normalized over integer degrees `x >= xmin`:
 | --- | --- | --- |
 | Power law | `x^(-alpha) / zeta(alpha, xmin)` | `alpha` (1) |
 | Exponential | `(1-q) * q^(x-xmin)`; a shifted geometric distribution | `q` (1) |
-| Lognormal | `P(x-0.5 <= Y < x+0.5 | Y >= xmin-0.5)`, with lognormal `Y` | `mu`, `sigma` (2) |
+| Lognormal | `P(x-0.5 <= Y < x+0.5 \| Y >= xmin-0.5)`, with lognormal `Y` | `mu`, `sigma` (2) |
 | Poisson | `P(Y=x) / P(Y>=xmin)`, with Poisson `Y` | `lambda_poisson` (1) |
 
 The Poisson rate is fitted by maximizing the **conditional** likelihood; it is not set equal to the observed tail mean. The lognormal is a binned continuous lognormal, not a separately defined integer-valued lognormal family.
