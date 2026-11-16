@@ -1,0 +1,17 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local environments and editor settings
+.venv/
+venv/
+.spyproject/
+.idea/
+.vscode/
+
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
